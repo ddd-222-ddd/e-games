@@ -2,7 +2,7 @@ const path = require("path");
 const express = require("express");
 const router = express.Router();
 
-router.post("/formPost", (req, res) => {
+router.get("/hello", (req, res) => {
     res.send("ola mundo");
 });
 
