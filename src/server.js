@@ -11,9 +11,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 const homeRoutes = require('./routes/home');
 const formPostRoutes = require('./routes/formPost');
+const hello = require('./routes/hello')
 
 app.use(homeRoutes);
 app.use(formPostRoutes);
+app.use(hello);
 
 
 app.listen(3000, () => {
