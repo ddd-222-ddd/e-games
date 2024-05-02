@@ -66,7 +66,36 @@ body{
     background-position: 0;
     border-color: black;
   }
+  .conheca{
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    height: 500px;
+    margin: 0;
+  }
+  .c{
+    color: #fff;
+    padding: 10px;
+  }
+  .c h1{
+    text-align:left;
+    width: 700px;
+    font-size: 90px;
+    margin-bottom: 5px;
+  }
+  .c button{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;  
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    background-color: red;
+    color: #fff;
+  }
   .info{
+    background-image: url(images/outra.png);
     background-color: #111217;
     display: flex;
     flex-direction: column;
@@ -75,7 +104,12 @@ body{
     padding: 20px;
     margin: 0;
   }
-  
+  #red{
+    background-image: url(images/E8a3_Defiance_Playval.com_Act_Overview_banner_3440x1020_Darkbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 210%;
+    background-position: center; 
+  }
   .info .info2{
     display: flex;
     flex-direction: row;
@@ -89,26 +123,39 @@ body{
     animation: back-go 3s;
   }
   .seach h1{
-    width: 400px;
-    font-size: 3rem;
+    width: 600px;
+    font-size: 80px;
     margin-bottom: 5px;
   }
   
   .seach p{
-    font-size: 25px;
-    width: 344px;
-    color: gray;
+    font-size: 30px;
+    width: 400px;
   }
   .seach button{
-    border: 1px solid;
     border-radius: 10px;
     padding: 15px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden; 
     cursor: pointer;  
     width: 150px;
     text-align: center;
     font-size: 15px;
-    background-color: rgb(17, 60, 6);
+    border-color: red;
+    background-color: red;
     color: #fff;
+    background-image: -webkit-linear-gradient(45deg, black 50%, transparent 50%);
+    background-image: linear-gradient(45deg, black 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    
+  }
+  .seach button:hover {
+    background-position: 0;
+    border-color: black;
   }
   .info2 .img{
     padding: 15px;
@@ -179,14 +226,52 @@ input[type="email"]{
 .button:hover {
   background-color: #555;
 }
-footer {
+.rodape{
   background-color: #111217;
-  color: #fff;
-  padding: 20px 0;
+  color: white;
+  height: auto;
+  width: 100%;
+  font-size: 14px;
+  font-family: helvetica;
 }
-
-.container {
-  width: 80%;
-  margin: 0 auto;
+.rodape a{
+  text-decoration: none;
+  color: white;
+}
+.rodape p{
+  margin-bottom: 5px;
+}
+.rodape-div{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  margin: auto;
+  align-items: stretch;
+  padding: 60px 10px 40px 10px;
+}
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+  display: flex;
+  width: calc(100% / 4 - 20px);
+  padding: 10px;
+}
+.rodape span{
+  font-size: 20px;
+  color: white;
+}
+.rodape-direitos{
+  width: calc(100% - 20px);
+  background-color: black;
+  padding: 10px;
+  margin: 0px;
   text-align: center;
+}
+/*mobile*/
+@media (max-width: 768px) {
+  .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+      width: calc(50% - 20px);
+      padding: 10px;
+  }
+  .rodape-div{
+      padding: 60px 0px 40px 0px;
+  }
 }

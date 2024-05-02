@@ -7,17 +7,16 @@ const app = express()
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
-const homeRoutes = require('./routes/home');
-const formPostRoutes = require('./routes/formPost');
-const hello = require('./routes/hello')
-
-app.use(homeRoutes);
-app.use(formPostRoutes);
-app.use(hello);
-
-
-app.listen(3000, () => {
-	console.log('Example app listening on port 3000!')
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/home.html")
+    //res.sendFile(path.join(__dirname, './public', 'form.html'))
+});
+app.get("/form", (req, res) => {
+    res.sendFile(__dirname + "/public/form.html")
+    //res.sendFile(path.join(__dirname, './public', 'form.html'))
+});
+app.listen(8080, () => {
+	console.log('Example app listening on port 8080!')
 })
