@@ -17,7 +17,7 @@ Para executar o projeto localmente em sua máquina, siga estas etapas:
 
 2. Navegue até o diretório do projeto:
    ```
-   cd backend
+   cd src
    ```
 
 3. Abra o arquivo `index.html` em um navegador da web.
