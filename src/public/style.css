@@ -234,6 +234,7 @@ body{
   }
   .banner .content p{
     font-size: 18px;
+    width: 80%;
   }
   .info{
     background-image: url(images/outra.png);
@@ -274,6 +275,9 @@ body{
   .c h1{
     width: 100%;
     font-size: 50px;
+  }
+  .rodape-div-2-coluna span{
+    margin: 20px;
   }
   .rodape-div-1,
   .rodape-div-2,
