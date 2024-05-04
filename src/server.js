@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 
 const app = express()
 
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
@@ -11,10 +12,6 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/home.html")
-    //res.sendFile(path.join(__dirname, './public', 'form.html'))
-});
-app.get("/form", (req, res) => {
-    res.sendFile(__dirname + "/public/form.html")
     //res.sendFile(path.join(__dirname, './public', 'form.html'))
 });
 app.listen(8080, () => {

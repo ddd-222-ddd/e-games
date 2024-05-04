@@ -181,51 +181,6 @@ body{
     transform: translateX(0);
   }
 } 
-.containerForm {
-  width: 60%;
-  margin: 50px auto;
-  background-color: #111217;
-  color: #fff;
-  font-size: 18px;
-}
-
-.containerForm h2 {
-  text-align: center;
-}
-
-form {
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"]{
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #555;
-}
 .rodape{
   background-color: #111217;
   color: white;
@@ -247,12 +202,12 @@ input[type="email"]{
   width:100%;
   margin: auto;
   align-items: stretch;
-  padding: 60px 10px 40px 10px;
+  padding: 50px 10px 20px 10px;
 }
 .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
   display: flex;
   width: calc(100% / 4 - 20px);
-  padding: 10px;
+  padding: 8px;
 }
 .rodape span{
   font-size: 20px;
@@ -267,11 +222,63 @@ input[type="email"]{
 }
 /*mobile*/
 @media (max-width: 768px) {
-  .rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
-      width: calc(50% - 20px);
-      padding: 10px;
+  .banner {
+    height: 50vh; /* Adjust height for small screens */
   }
-  .rodape-div{
-      padding: 60px 0px 40px 0px;
+
+  .banner video {
+    height: 50%; /* Adjust video height for small screens */
+  }
+  .banner .content h1{
+    font-size: 60px;
+  }
+  .banner .content p{
+    font-size: 18px;
+  }
+  .info{
+    background-image: url(images/outra.png);
+    background-color: #111217;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  .info2{
+    width: 100%;
+  }
+  .info2 .img{
+    display: none;
+  }
+  .seach{
+    width: 100%;
+  }
+  .seach h1{
+    font-size: 25px;
+    width: 100%;
+  }
+  
+  .seach p{
+    font-size: 20px;
+    width: 300px;
+  }
+  #red{
+    background-image: url(images/E8a3_Defiance_Playval.com_Act_Overview_banner_3440x1020_Darkbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 400%;
+    background-position: center; 
+  }
+  .conheca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .c h1{
+    width: 100%;
+    font-size: 50px;
+  }
+  .rodape-div-1,
+  .rodape-div-2,
+  .rodape-div-3,
+  .rodape-div-4 {
+    flex-basis: calc(50% - 20px);
   }
 }
