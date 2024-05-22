@@ -202,7 +202,7 @@ body{
   align-items: center;
   padding: 20px;
   color: #fff;
-  background-color: #d9d9d9f;
+  background-color: #d9d9d9;
   
 }
 .logo img{
@@ -312,5 +312,17 @@ body{
   .rodape-div-3,
   .rodape-div-4 {
     flex-basis: calc(50% - 20px);
+  }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width: 200px;
+  }
+  .info3 span{
+    font-size: 30px;
   }
 }
